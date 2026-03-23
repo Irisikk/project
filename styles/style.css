@@ -6,28 +6,63 @@
 }
 
 @font-face {
-    font-family: 'Gotham Pro';
-    src: url('../fonts/gothampro.ttf');
+    font-family: 'Gotham Pro Bold';
+    src: url('../fonts/gothampro_bold.ttf');
     font-weight: 700;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Gotham Pro Black';
+    src: url('../fonts/gothampro_black.ttf');
+    font-weight: 400;
+    font-display: swap;
+}
+
 .button{
-    font-family: 'Stolzl', 'Gotham Pro';
-    font-size: large;
-    font-weight: 200;
+    font-family: 'Stolzl', sans-serif;
+    font-size: 14px;
     color: #ffffff;
-    /*
-    background-color: #ffa500;
-    */
-    border: 2px solid #ffa500;
+    border: 2px solid #D5621D;
     border-radius: 5px;
-    padding: 15px 30px;
-    /*
-    width: 188px;
-    height: 51px;
-    */
+    gap: 10px;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.text_button{
+    font-family: 'Stolzl', sans-serif;
+    font-weight: 400;
+    padding: 15px 30px;
+}
+
+.icon_button{
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.arrow_button{
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.solid{
+    font-family: 'Gotham Pro Bold', sans-serif;
+    font-size: 18px;
+    background-color: #D5621D;
+}
+
+.links{
+    color: #ffffff;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-decoration: none;
 }
 
 .text{
@@ -35,15 +70,29 @@
 
 }
 
-.list{
-
+nav{
+    display: inline-block;
 }
 
-.item{
+ul{
+    display: inline-block;
+}
 
+li{
+    display: inline-block;
 }
 
 .page{
+    font-family: 'Stolzl', sans-serif;
     background-color: #210E09;
     color: #ffffff;
+    text-transform: uppercase;
 }
+
+.header{
+    /*width: 1305px;
+    height: 51px;*/
+    top: 30px;
+    left: 312px;
+}
+
