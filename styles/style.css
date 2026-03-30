@@ -1,23 +1,25 @@
 @font-face {
     font-family: 'Stolzl';
     src: url('../fonts/stolzl_regular.otf');
-    font-weight: 400;
+    font-weight: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham Pro Bold';
-    src: url('../fonts/gothampro_bold.ttf');
-    font-weight: 700;
+    font-family: 'Gotham Pro';
+    src: url('../fonts/gothampro.ttf');
+    font-weight: normal;
     font-display: swap;
 }
 
+/*
 @font-face {
     font-family: 'Gotham Pro Black';
     src: url('../fonts/gothampro_black.ttf');
     font-weight: 400;
     font-display: swap;
 }
+*/
 
 .button{
     font-family: 'Stolzl', sans-serif;
@@ -50,7 +52,8 @@
 }
 
 .solid{
-    font-family: 'Gotham Pro Bold', sans-serif;
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: bold;
     font-size: 18px;
     background-color: #D5621D;
 }
@@ -63,6 +66,7 @@
     line-height: 150%;
     letter-spacing: 0%;
     text-decoration: none;
+    text-transform: none;
 }
 
 .text{
@@ -89,10 +93,14 @@ li{
     text-transform: uppercase;
 }
 
+*{
+    line-height: 150%;
+}
+
+/*width: 1305px;
 .header{
-    /*width: 1305px;
-    height: 51px;*/
     top: 30px;
     left: 312px;
 }
+height: 51px;*/
 
