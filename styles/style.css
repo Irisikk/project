@@ -28,8 +28,8 @@
     src: url('../fonts/gothampro_black.ttf');
     font-weight: 400;
     font-display: swap;
-    }
-    */
+}
+*/
 
 *{
     line-height: 150%;
@@ -97,6 +97,45 @@ ul{
 }
 
 li{
+    display: inline-block;
+}
+
+
+
+lead{
+    color: #210E09;
+    background-color: white;
+    border-radius: 5px;
+}
+
+h2{
+    color: white;
+}
+
+dish{
+    display: inline-block;
+}
+
+description{
+    font-size: 14px;
+    display: inline;
+}
+
+heading_dish{
+    display: inline-block;
+}
+
+price{
+    border: 2px solid #D5621D;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+
+
+gramms{
+    color: #D5621D;
     display: inline-block;
 }
 
