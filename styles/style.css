@@ -35,6 +35,12 @@
     line-height: 150%;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    background-color: #210E09;
+}
+
 .button{
     font-family: 'Stolzl', sans-serif;
     font-size: 14px;
@@ -122,7 +128,7 @@ description{
 }
 
 heading_dish{
-    display: inline-block;
+    display: block;
 }
 
 price{
@@ -131,12 +137,13 @@ price{
     display: inline-block;
 }
 
-
-
-
 gramms{
     color: #D5621D;
-    display: inline-block;
+    display: block;
+}
+
+desc-text{
+
 }
 
 .page{
