@@ -10,11 +10,11 @@
 
 <body class="page">
     <header>
-        <a href="#"><img src="images/logo.svg" alt="Logo" width="158" height="40"></a>
-        <nav>
+        <nav class="flex">
+			<a href="#"><img src="images/logo.svg" alt="Logo" width="158" height="40"></a>
             <ul>
                 <li><a href="#" class="links">Главная</a></li>
-                <li><a href="#" class="links">Меню</a></li>
+                <li><a href="#kitchen" class="links">Меню</a></li>
                 <li><a href="#" class="links">Афиша</a></li>
                 <li><a href="#" class="links">Сотрудничество</a></li>
                 <li><a href="#" class="links">Галерея</a></li>
@@ -25,102 +25,138 @@
     </header>
 
     <main>
-        <p><b>Hello</b>, wold!!!</p>
-        <p>Привет, <b>мир</b>!!!</p>
-        <section>
-            <img src="images/deco-preview.jpg" alt="">
-            <section>
-                <dates>
-                    Ближайшие
-                    Скоро
-                </dates>
-                <img src="images/concert-4.jpg" alt="">
-                <img src="images/concert-3.jpg" alt="">
-                <img src="images/concert-1.jpg" alt="">
-                <img src="images/concert-2.jpg" alt="">
-            </section>
+        <section id="first-screen" class="flex first-screen">
+            <img class="smooth" src="images/deco-preview.jpg" alt="">
+            <div class="sub">
+                <div class="flex">
+                    <a class="sub" href="#">Ближайшие</a>
+					<a href="#">Скоро</a>
+                </div>
+				<div>
+					<div class="flex wrap">
+                        <img class="additcard" src="images/concert-1.jpg" alt="">
+                        <img class="additcard" src="images/concert-2.jpg" alt="">
+                    </div>
+					<div class="flex wrap">
+					    <img class="additcard" src="images/concert-4.jpg" alt="">
+					    <img class="additcard" src="images/concert-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
         </section>
 
+        
 
-
-        <section>
-            <lead>Top "Manhattan" menu</lead>
-            <h2>Кухня</h2>
-            <dish>
-                <img src="images/dish-1.jpg" alt="" style="float: left;">
-                <description>
-                    <heading_dish>Amet donec.<price>550 ₽</price></heading_dish>
-                    <gramms>200 гр</gramms>
-                    <desc-text>Placerat id auctor nunc id vel vel curabitur. Urna fames maecenas leo elit diam nibh elit.</desc-text>
-                </descripion>
-            </dish>
-            <dish>
-                <img src="images/dish-5.jpg" alt="">
-                <description>
-                    <heading_dish>Amet donec.<price>550 ₽</price></heading_dish>
-                    <gramms>500 гр</gramms>
-                    Elit imperdiet faucibus euismod tortor risus volutpat molestie morbi sed. Porta ac eu.
-                </description>
-            </dish>
-            <dish>
-                <img src="images/dish-7.jpg" alt="">
-                <description>
-                    <heading_dish>Amet donec.<price>550 ₽</price></heading_dish>
-                    <gramms>400 гр</gramms>
-                    Pharetra morbi purus hendrerit risus vel consequat nunc, sed. Pharetra nulla imperdiet.
-                </description>
-            </dish>
-            <dish>
-                <img src="images/dish-4.jpg" alt="">
-                <description>
-                    <heading_dish>Amet donec.<price>550 ₽</price></heading_dish>
-                    <gramms>200 гр</gramms>
-                    Leo in arcu in gravida vivamus scelerisque non. Euismod nec amet amet egestas nisl iaculis.
-                </description>
-            </dish>
-            <dish>
-                <img src="images/dish-8.jpg" alt="">
-                <description>
-                    <heading_dish>Amet donec.<price>550 ₽</price></heading_dish>
-                    <gramms>300 гр</gramms>
-                    In mauris, elit nisl sed. Nulla accumsan vestibulum sed velit sagittis quis accumsan.
-                </description>
-            </dish>
-            <dish>
-                <img src="images/dish-3.jpg" alt="">
-                <description>
-                    <heading_dish>Amet donec.<price>550 ₽</price></heading_dish>
-                    <gramms>500 гр</gramms>
-                    Duis quisque tristique nulla cursus justo, etiam viverra nulla cras. Consectetur eget augue.
-                </description>
-            </dish>
-            <dish>
-                <img src="images/dish-6.jpg" alt="">
-                <description>
-                    <heading_dish>Amet donec.<price>550 ₽</price></heading_dish>
-                    <gramms>100 гр</gramms>
-                    In cras pharetra aliquet laoreet. Lectus nisi ante felis quam pharetra in maecenas ut felis.
-                </description>
-            </dish>
-            <dish>
-                <img src="images/dish-2.jpg" alt="">
-                <description>
-                    <heading_dish>Amet donec.<price>550 ₽</price></heading_dish>
-                    <gramms>300 гр</gramms>
-                    Integer dolor et sed tempus non. Adipiscing viverra in viverra quisque pretium. Commodo.
-                </description>
-            </dish>
-            <a class="button arrow_button solid" href="#"><img src="images/arrow-left.svg" alt="Left" class="square"></a>
-            <a class="button arrow_button solid" href="#"><img src="images/arrow-right.svg" alt="Right"></a>
+        <section id="kitchen">
+            <div class="heading">
+                <lead>Top "Manhattan" menu</lead>
+                <h2>Кухня</h2>
+            </div>
+			<content class="flex">
+				<a class="button arrow_button solid" href="#"><img src="images/arrow-left.svg" alt="Left" class="square"></a>
+				<div class="grid">
+					<div class="dish">
+						<img src="images/dish-1.jpg" alt="">
+						<description>
+							<div class="disp-inline">
+								<span class="heading_dish">Amet donec.</span>
+								<price>550 ₽</price>
+							</div>
+                            <gramms>200 гр</gramms>
+							<desc-text>Placerat id auctor nunc id vel vel curabitur. Urna fames maecenas leo elit diam nibh elit.</desc-text>
+						</descripion>
+					</div>
+					<div class="dish">
+						<img src="images/dish-5.jpg" alt="">
+						<description>
+							<div class="disp-inline">
+								<span class="heading_dish">Amet donec.</span>
+								<price>550 ₽</price>
+							</div>
+							<gramms>500 гр</gramms>
+							Elit imperdiet faucibus euismod tortor risus volutpat molestie morbi sed. Porta ac eu.
+						</description>
+					</div>
+					<div class="dish">
+						<img src="images/dish-7.jpg" alt="">
+						<description>
+							<div class="disp-inline">
+								<span class="heading_dish">Amet donec.</span>
+								<price>550 ₽</price>
+							</div>
+                            <gramms>400 гр</gramms>
+							Pharetra morbi purus hendrerit risus vel consequat nunc, sed. Pharetra nulla imperdiet.
+						</description>
+					</div>
+					<div class="dish">
+						<img src="images/dish-4.jpg" alt="">
+						<description>
+							<div class="disp-inline">
+								<span class="heading_dish">Amet donec.</span>
+								<price>550 ₽</price>
+							</div>
+                            <gramms>200 гр</gramms>
+							Leo in arcu in gravida vivamus scelerisque non. Euismod nec amet amet egestas nisl iaculis.
+						</description>
+					</div>
+					<div class="dish">
+						<img src="images/dish-8.jpg" alt="">
+						<description>
+							<div class="disp-inline">
+								<span class="heading_dish">Amet donec.</span>
+								<price>550 ₽</price>
+							</div>
+                            <gramms>300 гр</gramms>
+							In mauris, elit nisl sed. Nulla accumsan vestibulum sed velit sagittis quis accumsan.
+						</description>
+					</div>
+					<div class="dish">
+						<img src="images/dish-3.jpg" alt="">
+						<description>
+							<div class="disp-inline">
+								<span class="heading_dish">Amet donec.</span>
+								<price>550 ₽</price>
+							</div>
+                            <gramms>500 гр</gramms>
+							Duis quisque tristique nulla cursus justo, etiam viverra nulla cras. Consectetur eget augue.
+						</description>
+					</div>
+					<div class="dish">
+						<img src="images/dish-6.jpg" alt="">
+						<description>
+							<div class="disp-inline">
+								<span class="heading_dish">Amet donec.</span>
+								<price>550 ₽</price>
+							</div>
+                            <gramms>100 гр</gramms>
+							In cras pharetra aliquet laoreet. Lectus nisi ante felis quam pharetra in maecenas ut felis.
+						</description>
+					</div>
+					<div class="dish">
+						<img src="images/dish-2.jpg" alt="">
+						<description>
+							<div class="disp-inline">
+								<span class="heading_dish">Amet donec.</span>
+								<price>550 ₽</price>
+							</div>
+                            <gramms>300 гр</gramms>
+							Integer dolor et sed tempus non. Adipiscing viverra in viverra quisque pretium. Commodo.
+						</description>
+					</div>
+				</div>
+				<a class="button arrow_button solid" href="#"><img src="images/arrow-right.svg" alt="Right"></a>
+			</content>
             <a class="button text_button solid" href="#">ВСЕ МЕНЮ</a>
         </section>
 
 
 
-        <section>
-            <article>
-                <lead>Top "Manhattan" events</lead>
-                <h2>Банкеты</h2>
+        <section id="events-and-tourists" class="flex wrap">
+            <article class="card">
+                <heading>
+                    <lead>Top "Manhattan" events</lead>
+                    <h2>Банкеты</h2>
+                </heading>
                 <description>
                     Quam massa pretium et venenatis. Fringilla sagittis, arcu massa, in sem viverra consequat. Tempus sed est interdum eget nisi, nec fames. Eget amet hac varius aliquam. Mattis egestas suspendisse convallis eu arcu et aliquet.
                     Porttitor risus sociis vitae nunc id lacus eget felis. Viverra et purus nibh ut. Sed ac leo sit posuere vulputate sed morbi. Donec gravida at turpis sed pulvinar. A nibh non consectetur morbi in arcu, in pellentesque mauris.
@@ -128,10 +164,12 @@
                 </description>
                 <a class="button text_button" href="#">Подробнее</a>
             </article>
-            <img src="images/deco-leisure.jpg" alt="">
-            <article>
-                <lead>Top "Manhattan" tourists</lead>
-                <h2>Туристы</h2>
+            <img class="" src="images/deco-leisure.jpg" alt="">
+            <article class="card">
+                <heading>
+                    <lead>Top "Manhattan" tourists</lead>
+                    <h2>Туристы</h2>
+                </heading>
                 <description>
                     Quam massa pretium et venenatis. Fringilla sagittis, arcu massa, in sem viverra consequat. Tempus sed est interdum eget nisi, nec fames. Eget amet hac varius aliquam. Mattis egestas suspendisse convallis eu arcu et aliquet.
                     Porttitor risus sociis vitae nunc id lacus eget felis. Viverra et purus nibh ut. Sed ac leo sit posuere vulputate sed morbi. Donec gravida at turpis sed pulvinar. A nibh non consectetur morbi in arcu, in pellentesque mauris.
@@ -143,9 +181,11 @@
 
 
 
-        <section>
-            <lead>Top "Manhattan" party</lead>
-            <h2>Техрайдер</h2>
+        <section id="rider">
+            <heading>
+                <lead>Top "Manhattan" party</lead>
+                <h2>Техрайдер</h2>
+            </heading>
             <info>
                 Loudspeakers
                 Amplifier
@@ -154,27 +194,46 @@
                 Microphone set
                 DJ equipment
             </info>
-            <article>
-                <img src="images/actor-1.jpg" alt="">
-                Изотов Константин
-                <a class="button icon_button" href="#"><img src="images/icon-vk.svg" alt="VK"></a>
-                <a class="button icon_button" href="#"><img src="images/icon-tg.svg" alt="TG"></a>
+            <article class="disp-inline">
+                <img class="smooth" src="images/actor-1.jpg" alt="">
+                <div class="">
+                    Изотов Константин
+                </div>
+                <div class="">
+                    <a class="button icon_button" href="#"><img src="images/icon-vk.svg" alt="VK"></a>
+                    <a class="button icon_button" href="#"><img src="images/icon-tg.svg" alt="TG"></a>
+                </div>
             </article>
-            <article>
-                <img src="images/actor-2.jpg" alt="">
-                Давид Хозиев
-                <a class="button icon_button" href="#"><img src="images/icon-vk.svg" alt="VK"></a>
-                <a class="button icon_button" href="#"><img src="images/icon-tg.svg" alt="TG"></a>
+            <article class="disp-inline">
+                <img class="smooth" src="images/actor-2.jpg" alt="">
+                <div class="">
+                    Давид Хозиев
+                </div>
+                <div class="">
+                    <a class="button icon_button" href="#"><img src="images/icon-vk.svg" alt="VK"></a>
+                    <a class="button icon_button" href="#"><img src="images/icon-tg.svg" alt="TG"></a>
+                </div>
             </article>
         </section>
     </main>
 
     <footer>
-        <lead>Top "Manhattan" place</lead>
-        <h2>Контакты</h2>
+        <heading>
+            <lead>Top "Manhattan" place</lead>
+            <h2>Контакты</h2>
+        </heading>
 
         <img src="images/map.png" alt="">
-    </footer>
+        <line style="display: block; width: 1296; height: 0px; top: 974px; opacity: 0.5; border-width: 1px; border: 1px solid #FFFFFF;"></line>
+        <copyrights>
+		<span>
+		Copyright © 2022. Все права защищены.
+		</span>
+		<span>
+        Разработано d-e-n.ru
+		</span>
+		</copyrights>
+	</footer>
 
 </body>
 
