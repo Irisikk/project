@@ -263,7 +263,7 @@ section{
     text-align: center;
 }
 
-copyrights{
+.copyrights{
 	display: flex;
 	justify-content: space-between;
 }
