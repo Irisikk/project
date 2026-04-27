@@ -25,31 +25,29 @@
     </header>
 
     <main>
-        <section id="first-screen" class="flex first-screen">
-            <img class="smooth" src="images/deco-preview.jpg" alt="">
-            <div class="sub">
-                <div class="flex">
-                    <a class="sub" href="#">Ближайшие</a>
-					<a href="#">Скоро</a>
+        <section id="first-screen" class="first-screen">
+            <img class="smooth shrinkcard" src="images/deco-preview.jpg" alt="">
+            <div class="soonevents shrinkcard">
+                <div class="date1">
+                    <a href="#" class="datelink">Ближайшие</a>
                 </div>
-				<div>
-					<div class="flex wrap">
-                        <img class="additcard" src="images/concert-1.jpg" alt="">
-                        <img class="additcard" src="images/concert-2.jpg" alt="">
-                    </div>
-					<div class="flex wrap">
-					    <img class="additcard" src="images/concert-4.jpg" alt="">
-					    <img class="additcard" src="images/concert-3.jpg" alt="">
-                    </div>
+                <div class="date2">
+					<a href="#" class="datelink">Скоро</a>
+                </div>
+				<div class="img_grid">
+                    <img class="img" src="images/concert-1.jpg" alt="">
+                    <img class="img" src="images/concert-2.jpg" alt="">
+                    <img class="img" src="images/concert-4.jpg" alt="">
+				    <img class="img" src="images/concert-3.jpg" alt="">
                 </div>
             </div>
         </section>
 
-        
+
 
         <section id="kitchen">
             <div class="heading">
-                <lead>Top "Manhattan" menu</lead>
+                <h1>Top "Manhattan" menu</h1>
                 <h2>Кухня</h2>
             </div>
 			<content class="flex">
@@ -146,17 +144,19 @@
 				</div>
 				<a class="button arrow_button solid" href="#"><img src="images/arrow-right.svg" alt="Right"></a>
 			</content>
-            <a class="button text_button solid" href="#">ВСЕ МЕНЮ</a>
+            <div class="center">
+                <a class="button text_button solid" href="#">ВСЕ МЕНЮ</a>
+            </div>
         </section>
 
 
 
         <section id="events-and-tourists" class="flex wrap">
             <article class="card">
-                <heading>
-                    <lead>Top "Manhattan" events</lead>
+                <div class="heading">
+                    <h1>Top "Manhattan" events</h1>
                     <h2>Банкеты</h2>
-                </heading>
+                </div>
                 <description>
                     Quam massa pretium et venenatis. Fringilla sagittis, arcu massa, in sem viverra consequat. Tempus sed est interdum eget nisi, nec fames. Eget amet hac varius aliquam. Mattis egestas suspendisse convallis eu arcu et aliquet.
                     Porttitor risus sociis vitae nunc id lacus eget felis. Viverra et purus nibh ut. Sed ac leo sit posuere vulputate sed morbi. Donec gravida at turpis sed pulvinar. A nibh non consectetur morbi in arcu, in pellentesque mauris.
@@ -164,12 +164,12 @@
                 </description>
                 <a class="button text_button" href="#">Подробнее</a>
             </article>
-            <img class="" src="images/deco-leisure.jpg" alt="">
+            <img class="smooth" src="images/deco-leisure.jpg" alt="">
             <article class="card">
-                <heading>
-                    <lead>Top "Manhattan" tourists</lead>
+                <div class="heading">
+                    <h1>Top "Manhattan" tourists</h1>
                     <h2>Туристы</h2>
-                </heading>
+                </div>
                 <description>
                     Quam massa pretium et venenatis. Fringilla sagittis, arcu massa, in sem viverra consequat. Tempus sed est interdum eget nisi, nec fames. Eget amet hac varius aliquam. Mattis egestas suspendisse convallis eu arcu et aliquet.
                     Porttitor risus sociis vitae nunc id lacus eget felis. Viverra et purus nibh ut. Sed ac leo sit posuere vulputate sed morbi. Donec gravida at turpis sed pulvinar. A nibh non consectetur morbi in arcu, in pellentesque mauris.
@@ -182,56 +182,58 @@
 
 
         <section id="rider">
-            <heading>
-                <lead>Top "Manhattan" party</lead>
+            <div class="heading">
+                <h1>Top "Manhattan" party</h1>
                 <h2>Техрайдер</h2>
-            </heading>
-            <info>
-                Loudspeakers
-                Amplifier
-                FOH
-                Backline
-                Microphone set
-                DJ equipment
-            </info>
-            <article class="disp-inline">
-                <img class="smooth" src="images/actor-1.jpg" alt="">
-                <div class="center">
-                    Изотов Константин
-                </div>
-                <div class="flex">
-                    <a class="button icon_button" href="#"><img src="images/icon-vk.svg" alt="VK"></a>
-                    <a class="button icon_button" href="#"><img src="images/icon-tg.svg" alt="TG"></a>
-                </div>
-            </article>
-            <article class="disp-inline">
-                <img class="smooth" src="images/actor-2.jpg" alt="">
-                <div class="center">
-                    Давид Хозиев
-                </div>
-                <div class="flex">
-                    <a class="button icon_button" href="#"><img src="images/icon-vk.svg" alt="VK"></a>
-                    <a class="button icon_button" href="#"><img src="images/icon-tg.svg" alt="TG"></a>
-                </div>
-            </article>
+            </div>
+            <content class="flex">
+                <ul>
+                    <li>Loudspeakers</li>
+                    <li>Amplifier</li>
+                    <li>FOH</li>
+                    <li>Backline</li>
+                    <li>Microphone set</li>
+                    <li>DJ equipment</li>
+                </ul>
+                <article class="disp-inline">
+                    <img class="smooth" src="images/actor-1.jpg" alt="">
+                    <div class="center">
+                        Изотов Константин
+                    </div>
+                    <div class="flex">
+                        <a class="button icon_button" href="#"><img src="images/icon-vk.svg" alt="VK"></a>
+                        <a class="button icon_button" href="#"><img src="images/icon-tg.svg" alt="TG"></a>
+                    </div>
+                </article>
+                <article class="disp-inline">
+                    <img class="smooth" src="images/actor-2.jpg" alt="">
+                    <div class="center">
+                        Давид Хозиев
+                    </div>
+                    <div class="flex">
+                        <a class="button icon_button" href="#"><img src="images/icon-vk.svg" alt="VK"></a>
+                        <a class="button icon_button" href="#"><img src="images/icon-tg.svg" alt="TG"></a>
+                    </div>
+                </article>
+            </content>
         </section>
     </main>
 
     <footer>
-        <heading>
-            <lead>Top "Manhattan" place</lead>
+        <div class="heading">
+            <h1>Top "Manhattan" place</h1>
             <h2>Контакты</h2>
-        </heading>
+        </div>
 
         <img src="images/map.png" alt="">
         <line style="display: block; width: 1296; height: 0px; top: 974px; opacity: 0.5; border-width: 1px; border: 1px solid #FFFFFF;"></line>
         <div class="copyrights">
-    		<span>
+    		<div>
 	    	Copyright © 2022. Все права защищены.
-		    </span>
-		    <span>
+		    </div>
+		    <div>
             Разработано d-e-n.ru
-		    </span>
+		    </div>
 		</div>
 	</footer>
 
