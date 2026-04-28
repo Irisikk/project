@@ -53,17 +53,16 @@ a{
 }
 
 .first-screen{
+    display: flex;
 	justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
-.maincard{
-	flex-shrink: 1;
-}
-
-.additcard{
-	flex-shrink: 1;
-	height: 15%;
-	width: 15%;
+.shrinkcard{
+    /* width: 1fr; */
+	/* flex-shrink: 1; */
+	width: 50%;
 }
 
 .card{
@@ -74,6 +73,45 @@ a{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
+}
+
+.soonevents{
+    display: grid;
+    width: 22%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "date1 date2"
+    "img img"
+    "img img";
+}
+
+.date1{
+    grid-area: date1;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #D5621D1A;
+}
+
+.date2{
+    grid-area: date2;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #D5621D0D;
+}
+
+.img{
+    width: 100%;
+    align-items: center;
+}
+
+.img_grid{
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+    grid-area: img;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #D5621D1A;
 }
 
 .wrap{
@@ -95,7 +133,7 @@ description{
     color: #ffffff;
     border: 2px solid #D5621D;
     border-radius: 5px;
-    gap: 10px;
+    /* gap: 10px; */
     cursor: pointer;
     text-decoration: none;
     text-align: center;
@@ -137,6 +175,18 @@ description{
     text-transform: none;
 }
 
+.datelink{
+    font-family: 'Gotham Pro', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    /* line-height: 150%; */
+    letter-spacing: 0%;
+    text-decoration: none;
+    text-align: center;
+}
+
 .text{
     font-size: 14px;
 
@@ -150,24 +200,12 @@ ul{
     display: inline-block;
 }
 
-li{
+nav ul li{
     display: inline-block;
 }
 
-.mid{
-	
-}
-
-lead{
-    color: #210E09;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px 20px 7px;
-}
-
-h2{
-    color: white;
-    font-size: 40px;
+main ul{
+    display: grid;
 }
 
 .dish{
@@ -249,15 +287,38 @@ desc-text{
     background-color: #D5621D;
 }
 
+.pos{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+}
+
 section{
     margin-top: 150px;
 }
 
 .heading{
-	width: 623px;
+	width: 32%;
     margin: 100px auto;
     text-align: center;
 }
+
+h1{
+    display: inline-block;
+    color: #210E09;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 20px 7px;
+    font-size: 14px;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
 
 .center{
     text-align: center;
