@@ -22,14 +22,14 @@
     font-display: swap;
 }
 
-/*
 @font-face {
     font-family: 'Gotham Pro Black';
     src: url('../fonts/gothampro_black.ttf');
     font-weight: 400;
+    font-style: normal;
     font-display: swap;
 }
-*/
+
 
 *{
     line-height: 150%;
@@ -50,6 +50,23 @@ a{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+
+.flex.vertical{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.active{
+    background-color: #D5621D;
+}
+
+.inactive{
+    background-color: #D5621D1A;
+}
+
+.flex.vertical div{
+    width: 100%;
 }
 
 .first-screen{
@@ -75,6 +92,33 @@ a{
 	gap: 20px;
 }
 
+.banner_first{
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: bold;
+    color: #210E09;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 20px 7px;
+    font-size: 18px;
+    text-align: center;
+    width: 12%;
+}
+
+.banner_second{
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 10px 20px 7px;
+    font-size: 40px;
+}
+
+.pos{
+    position: absolute;
+    width: 50%;
+    bottom: 19%;
+    left: 16%;
+}
+
 .soonevents{
     display: grid;
     width: 22%;
@@ -90,6 +134,7 @@ a{
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     background-color: #D5621D1A;
+    padding: 12px 10px 7px;
 }
 
 .date2{
@@ -97,6 +142,7 @@ a{
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     background-color: #D5621D0D;
+    padding: 12px 10px 7px;
 }
 
 .img{
@@ -122,12 +168,8 @@ a{
 	display: flex;
 }
 
-description{
-	text-transform: none;
-}
-
-
 .button{
+    display: inline-block;
     font-family: 'Stolzl', sans-serif;
     font-size: 14px;
     color: #ffffff;
@@ -137,6 +179,7 @@ description{
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+    padding: 10px 20px 7px; 
 }
 
 .text_button{
@@ -196,16 +239,42 @@ nav{
     display: inline-block;
 }
 
-ul{
-    display: inline-block;
-}
-
 nav ul li{
     display: inline-block;
 }
 
 main ul{
     display: grid;
+}
+
+section{
+    margin-top: 150px;
+}
+
+section > .heading, section > article > .heading, footer > .heading{
+	width: 32%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.heading > h1{
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    color: #210E09;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 20px 7px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.heading > h2{
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 40px;
+    text-align: center;
 }
 
 .dish{
@@ -215,36 +284,34 @@ main ul{
 }
 
 .description{
+	text-transform: none;
     font-size: 14px;
-    display: inline;
+    display: inline-block;
 }
 
-.heading_dish{
+.gramms{
+    color: #D5621D;
+    display: block;
+}
+
+.dish .heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish .heading span{
+    font-family: 'Gotham Pro', sans-serif;
     font-size: 18px;
     height: 100%;
     padding: auto;
 }
 
-dish_info{
-    width: 351px;
-    height: auto;
-}
-
-price{
+.dish .heading span + span{
+    font-family: 'Gotham Pro', sans-serif;
     border: 2px solid #D5621D;
     border-radius: 5px;
     display: inline-block;
     padding: 10px 20px 7px;
-    float: right;
-}
-
-gramms{
-    color: #D5621D;
-    display: block;
-}
-
-desc-text{
-
 }
 
 .page{
@@ -275,51 +342,6 @@ desc-text{
     border-radius: 5px;
 }
 
-.five{
-    background-color: #D5621D0D;
-}
-
-.sub{
-    background-color: #D5621D1A;
-}
-
-.act{
-    background-color: #D5621D;
-}
-
-.pos{
-    position: absolute;
-    top: 70%;
-    left: 15%;
-}
-
-section{
-    margin-top: 150px;
-}
-
-.heading{
-	width: 32%;
-    margin: 100px auto;
-    text-align: center;
-}
-
-h1{
-    display: inline-block;
-    color: #210E09;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px 20px 7px;
-    font-size: 14px;
-    text-align: center;
-}
-
-h2{
-    color: white;
-    font-size: 40px;
-    text-align: center;
-}
-
-
 .center{
     text-align: center;
 }
@@ -329,10 +351,19 @@ h2{
 	justify-content: space-between;
 }
 
-/*width: 1305px;
-.header{
-    top: 30px;
-    left: 312px;
+.copyrights div{
+    text-transform: none;
+    font-family: 'Stolzl', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
-height: 51px;*/
 
+.line{
+    display: block; 
+    width: 1296; 
+    height: 0px; 
+    top: 974px; 
+    opacity: 0.5; 
+    border-width: 1px; 
+    border: 1px solid #FFFFFF;
+}
