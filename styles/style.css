@@ -71,11 +71,18 @@ a{
 
 .first-screen{
     display: flex;
+    display: flex;
 	justify-content: center;
+    align-items: center;
+    gap: 24px;
     align-items: center;
     gap: 24px;
 }
 
+.shrinkcard{
+    /* width: 1fr; */
+	/* flex-shrink: 1; */
+	width: 50%;
 .shrinkcard{
     /* width: 1fr; */
 	/* flex-shrink: 1; */
@@ -175,6 +182,7 @@ a{
     color: #ffffff;
     border: 2px solid #D5621D;
     border-radius: 5px;
+    /* gap: 10px; */
     /* gap: 10px; */
     cursor: pointer;
     text-decoration: none;
