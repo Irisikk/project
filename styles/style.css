@@ -361,9 +361,25 @@ section > .heading, section > article > .heading, footer > .heading{
     font-size: 14px;
 }
 
+.contacts{
+    border: 2px solid #D5621D;
+    background-color: #D5621D1A;
+    border-radius: 5px;
+}
+
+.contacts div span{
+    font-family: 'Gotham Pro', sans-serif;
+    display: block;
+}
+
+.contacts div span + span{
+    font-family: 'Stolzl', sans-serif;
+    text-transform: none;
+}
+
 .line{
     display: block; 
-    width: 1296; 
+    width: 67.5%; 
     height: 0px; 
     top: 974px; 
     opacity: 0.5; 
