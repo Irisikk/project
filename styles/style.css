@@ -94,7 +94,7 @@ div.space{
 
 .first-screen{
     display: flex;
-	justify-content: center;
+    justify-content: center;
     align-items: center;
     gap: 24px;
 }
@@ -113,13 +113,13 @@ body{
 }
 
 .card{
-	width: 30%;
+    width: 30%;
 }
 
 .grid{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .banner_first{
@@ -186,8 +186,8 @@ body{
 
 .img_grid{
     display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     grid-area: img;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
