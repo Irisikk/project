@@ -58,9 +58,9 @@ div.space{
 }
 
 .flex{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .flex.vertical{
@@ -69,7 +69,7 @@ div.space{
 }
 
 .flex.vertical.smooth{
-    text-align: start1;
+    text-align: start;
 }
 
 .flex > p{
@@ -94,9 +94,13 @@ div.space{
 
 .first-screen{
     display: flex;
-	justify-content: center;
+    justify-content: center;
     align-items: center;
     gap: 24px;
+}
+
+section, footer.container{
+    margin-top: 150px;
 }
 
 section, footer.container{
@@ -113,13 +117,13 @@ body{
 }
 
 .card{
-	width: 30%;
+    width: 30%;
 }
 
 .grid{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .flex24{
@@ -194,8 +198,8 @@ body{
 
 .img_grid{
     display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     grid-area: img;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -298,6 +302,11 @@ nav ul{
     gap: 2em;
 }
 
+nav ul{
+    display: flex;
+    gap: 2em;
+}
+
 main ul{
     display: grid;
 }
@@ -316,6 +325,10 @@ article.card{
     align-self: flex-start;
 }
 
+article.card{
+    align-self: flex-start;
+}
+
 .heading > h2{
     font-family: 'Gotham Pro', sans-serif;
     font-weight: bold;
@@ -326,6 +339,8 @@ article.card{
     padding: 10px 20px 7px;
     font-size: 14px;
     text-align: center;
+    /* line-height: 100%; */
+    margin: 0 0;
     /* line-height: 100%; */
     margin: 0 0;
 }
