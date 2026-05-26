@@ -112,6 +112,10 @@ section, footer.container{
     margin: 0 auto;
 }
 
+header.container{
+    width: auto;
+}
+
 body{
     margin: 0;
 }
