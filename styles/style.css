@@ -638,7 +638,7 @@ div.flex.flex24 div.center{
 
 .app{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 800px;
@@ -673,7 +673,9 @@ div.flex.flex24 div.center{
 }
 
 .app-but{
-    
+    /* background-color: #D5621D; */
+    color: #210E09;
+    border-color: #210E09;
 }
 
 @media (max-width: 500px) {
