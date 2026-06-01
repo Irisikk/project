@@ -35,10 +35,17 @@
 }
 
 header{
-    position: sticky;
+    position: fixed;
     top: 0;
+    /* height: 0; */
     width: 100%;
     background-color: #210E09;
+}
+
+.inactive:hover, .button:hover{
+    background-color: #e48b54;
+    border-color: #210E09;
+    transition: background-color 0.2s ease 0s, border-color 0.2s ease 0s;
 }
 
 a{
@@ -101,6 +108,7 @@ div.space{
     /* align-items: center; */
     gap: 24px;
     flex-basis: 50%;
+    margin-top: 134px;
 }
 
 .stat-height{
@@ -144,7 +152,7 @@ body{
 }
 
 .card{
-    width: 30%;
+    width: 400px;
 }
 
 .grid{
@@ -155,6 +163,10 @@ body{
 
 .flex24{
     gap: 24px;
+}
+
+.flex44{
+    gap: 44px
 }
 
 .flex60{
@@ -555,7 +567,11 @@ h4{
 .vertical li{
     font-family: 'Stolzl', sans-serif;
     text-transform: none;
+    font-weight: 400;
     padding-right: 71px;
+    font-size: 14px;
+    letter-spacing: 0;
+    margin-bottom: 1em;
 }
 
 .base-up{
@@ -564,7 +580,7 @@ h4{
 }
 
 .base-up > div{
-    flex-basis: 50%;
+    flex-basis: 70%;
 }
 
 .rider-fix-size{
@@ -597,9 +613,25 @@ div.flex.flex24 div.center{
     text-transform: uppercase;
 }
 
+.nowrap{
+    flex-wrap: nowrap;
+}
+
+.little{
+    flex-shrink: 1;
+}
+
+.kitchen{
+    margin-top: 120px;
+}
+
 @media (max-width: 500px) {
-    .container{
-        width: 425px;
+    body{
+        width: 1vw;
+    }
+
+    .container, .lessercont{
+        width: 400px;
         /* justify-items: center; */
     }
 
@@ -630,4 +662,14 @@ div.flex.flex24 div.center{
     div.center.description{
         width: 400px
     }
+
+    .hide{
+        visibility: hidden;
+        width: 0;
+    }
+/* 
+    body{
+        margin-left: auto;
+        margin-right: auto;
+    } */
 }
