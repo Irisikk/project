@@ -587,7 +587,7 @@ h4{
 
 .rider-fix-size{
     width: 526px;
-    height: 688px;
+    /* height: 688px; */
 }
 
 div.flex.vertical.active ul{
@@ -683,7 +683,14 @@ div.flex.flex24 div.center{
         width: 400px;
     }
 
-    .container, .lessercont{
+    .app{
+    }
+
+    .between{
+        align-content: center;
+    }
+
+    header.container, .container, .lessercont{
         width: 400px;
         /* justify-items: center; */
     }
@@ -700,6 +707,15 @@ div.flex.flex24 div.center{
     img.contacts{
         object-fit: cover;
         width: 100%;
+    }
+
+    header h1{
+        visibility: hidden;
+    }
+
+    header{
+        left: 0;
+        width: 50%;
     }
 
     header ul{
@@ -719,6 +735,7 @@ div.flex.flex24 div.center{
     .hide{
         visibility: hidden;
         width: 0;
+        height: 0;
     }
 
     .dish{
