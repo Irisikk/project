@@ -538,7 +538,7 @@ div.contacts div.last{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
+    gap: 5%;
     justify-content: space-between;
     align-self: stretch;
 }
@@ -616,7 +616,7 @@ div.flex.vertical.active ul{
 
 img.contacts{
     object-fit: cover;
-    width: 60%;
+    width: 856px;
 }
 
 div.dish div.heading > span{
@@ -643,6 +643,11 @@ div.flex.flex24 div.center{
 
 .kitchen{
     margin-top: 120px;
+}
+
+input::placeholder{
+	font-family: 'Stolzl', sans-serif;
+	font-size: 14px;
 }
 
 .apps{
