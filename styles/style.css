@@ -693,6 +693,10 @@ div.flex.flex24 div.center{
 }
 
 @media (max-width: 500px) {
+	.first-screen{
+    	gap: 0;
+	}
+	
     body.page{
         width: 100%;
     }
