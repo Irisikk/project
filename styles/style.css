@@ -504,6 +504,10 @@ article.card{
     opacity: 50%;
 }
 
+div.contacts{
+	height: 600px;
+}
+
 /* div.contacts div{
     margin-bottom: 35px;
 } */
