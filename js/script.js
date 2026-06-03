@@ -2,6 +2,7 @@
 
 const bookButton = document.querySelector(".book-but");
 const applications = document.querySelector(".apps");
+// const bookConfirm = document.querySelector(".app-but");
 
 if (bookButton && applications)
 {
@@ -10,13 +11,14 @@ if (bookButton && applications)
                 applications.removeAttribute("hidden");
             }
         );
-}
 
-window.addEventListener("click", function(event)
-        {
-            if (event.target === applications)
+    window.addEventListener("click", function(event)
             {
-                applications.setAttribute("hidden", true);
+                if (event.target === applications)
+                {
+                    applications.setAttribute("hidden", true);
+                }
             }
-        }
-    )
+        );
+    // bookConfirm.addEventListener();
+}
