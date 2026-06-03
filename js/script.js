@@ -2,23 +2,28 @@
 
 const bookButton = document.querySelector(".book-but");
 const applications = document.querySelector(".apps");
-// const bookConfirm = document.querySelector(".app-but");
+const cancelButton = document.querySelector(".app-cncl");
 
-if (bookButton && applications)
+if (bookButton && applications && cancelButton)
 {
     bookButton.addEventListener("click", function(event)
-            {
-                applications.removeAttribute("hidden");
-            }
-        );
+        {
+            applications.removeAttribute("hidden");
+        }
+    );
 
     window.addEventListener("click", function(event)
+        {
+            if (event.target === applications)
             {
-                if (event.target === applications)
-                {
-                    applications.setAttribute("hidden", true);
-                }
+                applications.setAttribute("hidden", true);
             }
-        );
-    // bookConfirm.addEventListener();
+        }
+    );
+    
+    cancelButton.addEventListener("click", function()
+        {
+            applications.setAttribute("hidden", true);
+        }
+    );
 }
