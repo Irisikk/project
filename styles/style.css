@@ -191,6 +191,10 @@ body{
     margin-top: 96px;
 }
 
+.gap130{
+	gap: 130px;
+}
+
 .top35 .text_button{
     font-style: normal;
 }
