@@ -177,6 +177,10 @@ body{
     gap: 60px;
 }
 
+.flex-rider{
+	gap: 20px;
+}
+
 .top35{
     margin-top: 35px;
 }
@@ -691,6 +695,7 @@ div.flex.flex24 div.center{
     }
 
     .between{
+		justify-content: center;
         align-content: center;
     }
 
