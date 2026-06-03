@@ -683,8 +683,8 @@ div.flex.flex24 div.center{
 }
 
 @media (max-width: 500px) {
-    body{
-        width: 400px;
+    body.page{
+        width: 100%;
     }
 
     .app{
