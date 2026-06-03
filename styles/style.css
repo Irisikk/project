@@ -178,6 +178,7 @@ body{
 }
 
 .flex-rider{
+	display: flex;
 	gap: 20px;
 }
 
@@ -606,7 +607,7 @@ div.flex.vertical.active ul{
 
 img.contacts{
     object-fit: cover;
-    width: 100%;
+    width: 60%;
 }
 
 div.dish div.heading > span{
@@ -716,6 +717,7 @@ div.flex.flex24 div.center{
     img.contacts{
         object-fit: cover;
         width: 100%;
+		height: 70%;
     }
 
     header h1{
