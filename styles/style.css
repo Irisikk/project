@@ -507,6 +507,7 @@ article.card{
 div.contacts{
     padding: 50px;
 	height: 100%;
+	gap: 5px;
 }
 
 /* div.contacts div{
