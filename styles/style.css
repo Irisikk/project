@@ -504,9 +504,9 @@ article.card{
     opacity: 50%;
 }
 
-div.contacts div{
+/* div.contacts div{
     margin-bottom: 35px;
-}
+} */
 
 div.contacts div.last{
     margin-bottom: 0px;
@@ -534,7 +534,7 @@ div.contacts div.last{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
     justify-content: space-between;
     align-self: stretch;
 }
