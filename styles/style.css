@@ -505,6 +505,7 @@ article.card{
 }
 
 div.contacts{
+    padding: 50px;
 	height: 100%;
 }
 
@@ -541,10 +542,6 @@ div.contacts div.last{
     gap: 5%;
     justify-content: space-between;
     align-self: stretch;
-}
-
-div.contacts{
-    padding: 50px;
 }
 
 .contacts div span{
