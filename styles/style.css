@@ -706,6 +706,7 @@ input::placeholder{
 
 .app-cncl{
 	visibility: hidden;
+	width: 0;
 }
 
 .app-but{
@@ -786,6 +787,7 @@ input::placeholder{
 	.app-cncl{
 		visibility: visible;
 		opacity: 70%;
+		width: auto;
 	}
 
 	.base-up > div{
